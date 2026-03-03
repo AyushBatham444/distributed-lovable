@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e4c5bf9b-883d-48b1-88c5-114a6d43e717" name="Changes" comment="Commit_2_Micorservices">
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AyushBatham444&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AyushBatham444/Lovable_Distributed.git&quot;,
+    &quot;accountId&quot;: &quot;4649d037-c424-4a9a-bf75-e91f1aba7b73&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3AQZUeZ5TfvCETUb2Un2fZFTqh9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AccountServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ConfigServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WorkspaceServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/springboot/Lovable-Distributed/workspace-service/src/main/java/com/distributed_lovable/workspace_service/controller&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springboot\Lovable-Distributed\workspace-service\src\main\java\com\distributed_lovable\workspace_service\controller" />
+      <recent name="D:\springboot\Lovable-Distributed\workspace-service\src\main\java\com\distributed_lovable\workspace_service\mapper" />
+      <recent name="D:\springboot\Lovable-Distributed\workspace-service\src\main\java\com\distributed_lovable\workspace_service\dto" />
+      <recent name="D:\springboot\Lovable-Distributed\workspace-service\src\main\java\com\distributed_lovable\workspace_service\service\impl" />
+      <recent name="D:\springboot\Lovable-Distributed\workspace-service\src\main\java\com\distributed_lovable\workspace_service\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\springboot\Lovable-Distributed\common-lib\src\main\resources\META-INF\spring" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.distributed_lovable.account_service.controller" />
+      <recent name="com.distributed_lovable.account_service.service.impl" />
+      <recent name="com.distributed_lovable.account_service.service" />
+      <recent name="com.distributed_lovable.account_service.mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="Application">
+          <value>
+            <map>
+              <entry key="AccountServiceApplication" value="STOPPED" />
+              <entry key="ApiGatewayApplication" value="STOPPED" />
+              <entry key="ConfigServiceApplication" value="STOPPED" />
+              <entry key="DiscoveryServiceApplication" value="STOPPED" />
+              <entry key="WorkspaceServiceApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.WorkspaceServiceApplication">
+    <configuration name="AccountServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.distributed_lovable.account_service.AccountServiceApplication" />
+      <module name="account-service" />
+      <option name="VM_PARAMETERS" value="-Duser.timezone=UTC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.distributed_lovable.account_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.distributed_lovable.api_gateway.ApiGatewayApplication" />
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.distributed_lovable.api_gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.distributed_lovable.config_service.ConfigServiceApplication" />
+      <module name="config-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.distributed_lovable.config_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.distributed_lovable.discovery_service.DiscoveryServiceApplication" />
+      <module name="discovery-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.distributed_lovable.discovery_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkspaceServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.distributed_lovable.workspace_service.WorkspaceServiceApplication" />
+      <module name="workspace-service" />
+      <option name="VM_PARAMETERS" value="-Duser.timezone=UTC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.distributed_lovable.workspace_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ApiGatewayApplication" />
+      <item itemvalue="Application.WorkspaceServiceApplication" />
+      <item itemvalue="Application.AccountServiceApplication" />
+      <item itemvalue="Application.ConfigServiceApplication" />
+      <item itemvalue="Application.DiscoveryServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WorkspaceServiceApplication" />
+        <item itemvalue="Application.AccountServiceApplication" />
+        <item itemvalue="Application.ConfigServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.DiscoveryServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4c5bf9b-883d-48b1-88c5-114a6d43e717" name="Changes" comment="" />
+      <created>1772526771285</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772526771285</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Commit_2_Micorservices">
+      <option name="closed" value="true" />
+      <created>1772573614440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772573614440</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit_2_Micorservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit_2_Micorservices" />
+  </component>
+</project>
