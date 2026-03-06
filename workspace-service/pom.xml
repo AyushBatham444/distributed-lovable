@@ -33,6 +33,10 @@
 	</properties>
 	<dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-kafka</artifactId>
+        </dependency>
+        <dependency>
             <groupId>io.fabric8</groupId> <!-- helps connect java application to kubernetes cluster -->
             <artifactId>kubernetes-client</artifactId>
             <version>7.3.1</version>

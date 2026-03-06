@@ -1,4 +1,4 @@
-package com.distributed_lovable.workspace_service.dto.project;
+package com.distributed_lovable.common_lib.dto;
 
 public record FileNode(
         String path

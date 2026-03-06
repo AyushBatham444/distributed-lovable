@@ -1,6 +1,7 @@
 package com.distributed_lovable.workspace_service.service.impl;
 
 import com.distributed_lovable.common_lib.dto.PlanDto;
+import com.distributed_lovable.common_lib.enums.ProjectPermission;
 import com.distributed_lovable.common_lib.enums.ProjectRole;
 import com.distributed_lovable.common_lib.errors.BadRequestException;
 import com.distributed_lovable.common_lib.errors.ResourceNotFoundException;
@@ -15,6 +16,7 @@ import com.distributed_lovable.workspace_service.entity.ProjectMemberId;
 import com.distributed_lovable.workspace_service.mapper.ProjectMapper;
 import com.distributed_lovable.workspace_service.repository.ProjectMemberRepository;
 import com.distributed_lovable.workspace_service.repository.ProjectRepository;
+import com.distributed_lovable.workspace_service.security.SecurityExpressions;
 import com.distributed_lovable.workspace_service.service.ProjectService;
 import com.distributed_lovable.workspace_service.service.ProjectTemplateService;
 import jakarta.transaction.Transactional;
@@ -40,6 +42,7 @@ public class ProjectServiceImpl implements ProjectService {
     ProjectTemplateService projectTemplateService;
     AccountClient accountClient;
     ProjectMemberRepository projectMemberRepository;
+    SecurityExpressions securityExpressions;
     @Override
     public ProjectResponse createProject(ProjectRequest request) {
 
@@ -124,7 +127,10 @@ public class ProjectServiceImpl implements ProjectService {
         projectRepositoryObj.save(project); // optional line since we have @transactional annotation
     }
 
-
+    @Override
+    public boolean hasPermission(Long projectId, ProjectPermission permission) {
+        return securityExpressions.hasPermission(projectId,permission);
+    }
 
 
     //// internal function

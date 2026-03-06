@@ -1,9 +1,8 @@
 package com.distributed_lovable.workspace_service.service.impl;
 
+import com.distributed_lovable.common_lib.dto.FileNode;
+import com.distributed_lovable.common_lib.dto.FileTreeDto;
 import com.distributed_lovable.common_lib.errors.ResourceNotFoundException;
-import com.distributed_lovable.workspace_service.dto.project.FileContentResponse;
-import com.distributed_lovable.workspace_service.dto.project.FileNode;
-import com.distributed_lovable.workspace_service.dto.project.FileTreeResponse;
 import com.distributed_lovable.workspace_service.entity.Project;
 import com.distributed_lovable.workspace_service.entity.ProjectFile;
 import com.distributed_lovable.workspace_service.mapper.ProjectFileMapper;
@@ -13,6 +12,7 @@ import com.distributed_lovable.workspace_service.service.ProjectFileService;
 import io.minio.GetObjectArgs;
 import io.minio.MinioClient;
 import io.minio.PutObjectArgs;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -41,14 +41,14 @@ public class ProjectFileServiceImpl implements ProjectFileService {
 
 
     @Override
-    public FileTreeResponse getFileTree(Long projectId) {
+    public FileTreeDto getFileTree(Long projectId) {
         List<ProjectFile> projectFileList=projectFileRepository.findByProjectId(projectId);
         List<FileNode> projectFileNodes = projectFileMapper.toListOfFileNode(projectFileList);
-        return new FileTreeResponse(projectFileNodes);
+        return new FileTreeDto(projectFileNodes);
     }
 
     @Override
-    public FileContentResponse getFileContent(Long projectId, String path) {
+    public String getFileContent(Long projectId, String path) {
         String objectName = projectId + "/" + path;
         try (
                 InputStream is = minioClient.getObject(
@@ -57,8 +57,7 @@ public class ProjectFileServiceImpl implements ProjectFileService {
                                 .object(objectName)
                                 .build())) {
 
-            String content = new String(is.readAllBytes(), StandardCharsets.UTF_8);
-            return new FileContentResponse(path, content);
+            return new String(is.readAllBytes(), StandardCharsets.UTF_8);
         } catch (Exception e) {
             log.error("Failed to read file: {}/{}", projectId, path, e);
             throw new RuntimeException("Failed to read file content", e);
@@ -66,6 +65,7 @@ public class ProjectFileServiceImpl implements ProjectFileService {
     }
 
     @Override
+    @Transactional
     public void saveFile(Long projectId, String path, String content) {
 
         Project project=projectRepository.findById(projectId).orElseThrow(
