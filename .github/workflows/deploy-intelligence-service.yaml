@@ -8,7 +8,7 @@ on:
       - 'intelligence-service/**'
 
 env:
-  SERVICE_NAME: account-service
+  SERVICE_NAME: intelligence-service
   IMAGE_NAME: bathamayush88/lovable-intelligence-service
 
 permissions:
