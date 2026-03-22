@@ -10,7 +10,6 @@ spring:
       default-label: master
 
 
-
 server.port: 8888
 
 eureka.instance:
