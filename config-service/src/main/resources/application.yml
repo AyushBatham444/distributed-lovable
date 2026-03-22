@@ -9,6 +9,7 @@ spring:
       password: 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
       default-label: master
 
+
 server.port: 8888
 
 eureka.instance:
