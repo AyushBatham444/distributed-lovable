@@ -2,6 +2,7 @@ spring:
   application:
     name: config-service
 
+
   cloud:
     config.server.git:
       uri: https://github.com/AyushBatham444/lovable-config-server
